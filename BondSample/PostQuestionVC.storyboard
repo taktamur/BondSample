@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="wvo-iW-AVj">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Post Question View Controller-->
+        <scene sceneID="qDy-29-0mc">
+            <objects>
+                <viewController id="wvo-iW-AVj" customClass="PostQuestionViewController" customModule="BondSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="do2-TD-22k"/>
+                        <viewControllerLayoutGuide type="bottom" id="zYG-PQ-2ed"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pUl-4j-N6j">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="質問本文" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pz2-kT-TXh">
+                                <rect key="frame" x="16" y="56.5" width="288" height="143.5"/>
+                                <color key="backgroundColor" red="1" green="0.96876316490000003" blue="0.50980062169999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="文字数：xxx" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LK6-P3-lrF">
+                                <rect key="frame" x="16" y="208" width="288" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqW-EL-kJr">
+                                <rect key="frame" x="16" y="236" width="60" height="30"/>
+                                <state key="normal" title="投稿する"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="メッセージ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5qH-MF-XAV">
+                                <rect key="frame" x="16" y="28" width="288" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LK6-P3-lrF" firstAttribute="leading" secondItem="pUl-4j-N6j" secondAttribute="leadingMargin" id="6Mm-et-hht"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pz2-kT-TXh" secondAttribute="trailing" id="7Nh-xo-L83"/>
+                            <constraint firstItem="pz2-kT-TXh" firstAttribute="top" secondItem="5qH-MF-XAV" secondAttribute="bottom" constant="8" id="8hy-SI-NC2"/>
+                            <constraint firstItem="pz2-kT-TXh" firstAttribute="leading" secondItem="pUl-4j-N6j" secondAttribute="leadingMargin" id="BSE-9I-ogi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LK6-P3-lrF" secondAttribute="trailing" id="DFj-Ea-XYa"/>
+                            <constraint firstItem="5qH-MF-XAV" firstAttribute="leading" secondItem="pUl-4j-N6j" secondAttribute="leadingMargin" id="DJM-dO-XoH"/>
+                            <constraint firstItem="eqW-EL-kJr" firstAttribute="leading" secondItem="pUl-4j-N6j" secondAttribute="leadingMargin" id="Fop-61-bQ1"/>
+                            <constraint firstItem="LK6-P3-lrF" firstAttribute="top" secondItem="pz2-kT-TXh" secondAttribute="bottom" constant="8" id="NAc-Ty-DrN"/>
+                            <constraint firstItem="zYG-PQ-2ed" firstAttribute="top" secondItem="pz2-kT-TXh" secondAttribute="bottom" constant="368" id="P7W-gg-DXK"/>
+                            <constraint firstItem="5qH-MF-XAV" firstAttribute="top" secondItem="do2-TD-22k" secondAttribute="bottom" constant="8" id="fy0-2L-LGf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5qH-MF-XAV" secondAttribute="trailing" id="wuv-Jm-ME6"/>
+                            <constraint firstItem="eqW-EL-kJr" firstAttribute="top" secondItem="LK6-P3-lrF" secondAttribute="bottom" constant="8" id="xnM-6Y-MOS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="YHI-Rt-RUa"/>
+                    <connections>
+                        <outlet property="counterLabel" destination="LK6-P3-lrF" id="pMz-HF-vqL"/>
+                        <outlet property="messageLabel" destination="5qH-MF-XAV" id="2d8-tO-oOa"/>
+                        <outlet property="questionTextView" destination="pz2-kT-TXh" id="UuP-1X-xej"/>
+                        <outlet property="submitButton" destination="eqW-EL-kJr" id="taY-NK-piv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KP4-Fo-zRO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="601.06666666666661" y="243.29333333333332"/>
+        </scene>
+    </scenes>
+</document>
