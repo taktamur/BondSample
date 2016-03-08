@@ -35,7 +35,7 @@ class HelloBondViewController: UIViewController {
             .map{ t in
                 // ここはSwitBondとは関係ない、Swiftのテクニック
                 // Optional型のmap関数を使って処理しています。
-                // (Bondのmap関数とは別物）
+                // (BondのObservableのmap関数とは別物）
                 //
                 // tにはOptional<String>が入っている。
                 // Optionalのmap関数は、nilの時にはnilを返し、
