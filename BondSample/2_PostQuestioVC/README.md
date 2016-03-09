@@ -13,6 +13,7 @@
 - メッセージ部分はアニメーションする
 - 投稿中（通信中）は、NetworkIndicatorを回す
 
-サンプルでは通信そのものはせずに、「通信しているつもり」な実装になっています。
+サンプルでは通信そのものはせずに、「通信しているつもり」な実装になっています。テキストの長さが奇数の時は投稿失敗、偶数の時は投稿成功となります。
 
 ![](https://raw.githubusercontent.com/taktamur/BondSample/master/BondSample/2_PostQuestioVC/2_PostQuestion.gif)
+
