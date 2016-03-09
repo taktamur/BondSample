@@ -4,24 +4,24 @@
 digraph relation {
 
   subgraph clusterVC {
-    length [label="lengthObservable",shape="box"]
+    length [label="lengthObservable",shape="box",style=filled,fillColor=lightgray]
     label = "ViewControler";
 
   subgraph cluster1 {
-    text1 [label="bnd_text",shape="box"]
+    text1 [label="bnd_text",shape="box",style=filled,fillColor=lightgray]
     label = "textField";
   }
   subgraph cluster2 {
-    text2 [label="bnd_text",shape="box"]
+    text2 [label="bnd_text",shape="box",style=filled,fillColor=lightgray]
     label = "textField2"
   }
   subgraph cluster3 {
-    text3 [label="bnd_text", shape="box"]
+    text3 [label="bnd_text", shape="box",style=filled,fillColor=lightgray]
     label = "textField3";
   }
   subgraph cluster4 {
-    text4 [label="bnd_text",shape="box"]
-    text4Color [label="bnd_textColor",shape="box"]
+    text4 [label="bnd_text",shape="box",style=filled,fillColor=lightgray]
+    text4Color [label="bnd_textColor",shape="box",style=filled,fillColor=lightgray]
     label = "textField4";
   }
   _a [label="",shape=point]
