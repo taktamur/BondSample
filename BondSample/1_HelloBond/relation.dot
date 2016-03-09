@@ -1,0 +1,47 @@
+// use to Graphviz when generate image file.
+// http://www.graphviz.org/Download_macos.php
+
+digraph relation {
+
+  subgraph clusterVC {
+    length [label="lengthObservable",shape="box"]
+    label = "ViewControler";
+
+  subgraph cluster1 {
+    text1 [label="bnd_text",shape="box"]
+    label = "textField";
+  }
+  subgraph cluster2 {
+    text2 [label="bnd_text",shape="box"]
+    label = "textField2"
+  }
+  subgraph cluster3 {
+    text3 [label="bnd_text", shape="box"]
+    label = "textField3";
+  }
+  subgraph cluster4 {
+    text4 [label="bnd_text",shape="box"]
+    text4Color [label="bnd_textColor",shape="box"]
+    label = "textField4";
+  }
+  _a [label="",shape=point]
+  _b [label="",shape=point]
+  _c [label="",shape=point]
+  _d [label="",shape=point]
+}
+
+
+  text1 -> text2 [label = "bindTo"]
+
+  text1 -> _a [label = "map"]
+  _a -> text3 [label = "bindTo"]
+
+  text1 -> _b [label = "map"]
+  _b -> length [label="bindTo"]
+
+  length -> _c [label = "map"]
+  _c -> text4 [label="bindTo"]
+  length -> _d [label = "map"]
+  _d -> text4Color [label="bindTo"]
+
+}
