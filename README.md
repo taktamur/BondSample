@@ -37,8 +37,8 @@ SwiftBond →[https://github.com/SwiftBond/Bond](https://github.com/SwiftBond/Bo
 - これから調べていきたい：
   - Observable->map->bindTo した時と、イベントが発生した時に、どんな処理が行われるのか。
   - 用意されている変換(transform)のバリエーション(mapやfilter等など)
+  - ObservableやEventProducerの関係。なんとなく「EventProducer」の方が重要な気がする。
 
 # 参考にしたページ
 
 - [【翻訳】あなたが求めていたリアクティブプログラミング入門](http://ninjinkun.hatenablog.com/entry/introrxja)
-- 
