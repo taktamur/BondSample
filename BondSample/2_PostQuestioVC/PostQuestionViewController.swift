@@ -13,7 +13,7 @@ class PostQuestionViewController: UIViewController {
     @IBOutlet weak var submitButton: UIButton!
     @IBOutlet weak var counterLabel: UILabel!
     @IBOutlet weak var messageLabel: UILabel!
-    let questionModel:QuestionModel=QuestionModel()
+    let questionModel:PostQuestionModel=PostQuestionModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()

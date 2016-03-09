@@ -28,7 +28,7 @@ class HelloBondViewController: UIViewController {
             .bindTo(textField2.bnd_text)
         
         // textFieldの文字列を、「逆順」に変換して、
-        // textField3のbnd_textに入れる
+        // textField2のbnd_textに入れる
         // ここでいう変換(transform)は、SwiftBondの用語?
         //  https://github.com/SwiftBond/Bond#transforming-the-event-producers
         textField.bnd_text
