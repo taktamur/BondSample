@@ -25,7 +25,7 @@ class PostQuestionViewController: UIViewController {
         // ほとんど何もしていない。
         // 
         // viewModelというより、「画面ロジックの登録」係、builderパターンに近い？
-        let viewModel = ViewModel(self.questionModel)
+        let viewModel = PostQuestionViewModel(self.questionModel)
         viewModel.bindToQuestionText(self.questionTextView)
         viewModel.bindToSubmitButton(self.submitButton)
         viewModel.bindToCounter(self.counterLabel)

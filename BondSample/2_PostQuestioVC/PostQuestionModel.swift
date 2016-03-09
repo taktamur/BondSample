@@ -15,7 +15,7 @@ enum PostEvent{
     case Failed
 }
 
-class QuestionModel{
+class PostQuestionModel{
     // Observalbeは「値」を保持できる。
     // 一方Eventは「その瞬間にあった何か」を表している。
     // そのため、ObservableにEventを保持しておく事に気持ち悪さを感じた。

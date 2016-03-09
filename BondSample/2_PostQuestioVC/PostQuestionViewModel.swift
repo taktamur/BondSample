@@ -9,10 +9,10 @@
 import Foundation
 import Bond
 
-struct ViewModel{
-    let questionModel:QuestionModel
+struct PostQuestionViewModel{
+    let questionModel:PostQuestionModel
     
-    init(_ questionModel:QuestionModel){
+    init(_ questionModel:PostQuestionModel){
         self.questionModel = questionModel
     }
 
