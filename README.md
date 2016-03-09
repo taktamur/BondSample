@@ -18,6 +18,12 @@ SwiftBond →[https://github.com/SwiftBond/Bond](https://github.com/SwiftBond/Bo
 - 混線しないように、設計段階での方針が重要になると思われます。
   - 主役のObservableを決め、他は「それに追従する」ようにした方が良さそう。王は二人要らない。
   - クラスのプロパティとして公開するObservableは最小にした方が良さそう
+- Observable<T>は、「T型の値を保持し、新しい値が代入されたら通知を飛ばす」もの。
+  - Tはいろいろ。StringやIntやMyEnum。Optional型も入る
+  - 新しい値の代入は、Observable.next()で行う。
+  - String型やInt型が、通知を飛ばしているわけではなくて、ラッピングしているObservableが飛ばしている。
+- Observable<T>は、ありとあらゆる「変数」「プロパティ」として使えてしまうが、使いすぎると混乱する 
+  - クラスのプロパティにObservable<T>を並べるのは、オススメしない。。。。混線して後悔しました。  
 - まだ良くわかっていない事：
   - disposeBag()はまだ良くわかっていない。bindToで「配線した」ルールを「切断」するためのモノだと思うけど。
   - リアクティブプログラミングで「ストリーム」と呼ばれているモノは、SwiftBondで言う「Observable.next()」に該当するのか？
@@ -25,3 +31,7 @@ SwiftBond →[https://github.com/SwiftBond/Bond](https://github.com/SwiftBond/Bo
 - これから調べていきたい：
   - Observable->map->bindTo した時と、イベントが発生した時に、どんな処理が行われるのか。
   - 用意されている変換(transform)のバリエーション(mapやfilter等など)
+
+# 参考にしたページ
+- [【翻訳】あなたが求めていたリアクティブプログラミング入門](http://ninjinkun.hatenablog.com/entry/introrxja)
+- 
