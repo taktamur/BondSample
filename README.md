@@ -26,7 +26,8 @@ SwiftBond →[https://github.com/SwiftBond/Bond](https://github.com/SwiftBond/Bo
   - クラスのプロパティにObservable<T>を並べるのは、オススメしない。。。。混線して後悔しました。  
 - まだ良くわかっていない事：
   - disposeBag()はまだ良くわかっていない。bindToで「配線した」ルールを「切断」するためのモノだと思うけど。
-  - リアクティブプログラミングで「ストリーム」と呼ばれているモノは、SwiftBondで言う「Observable.next()」に該当するのか？
+  - リアクティブプログラミングで「ストリーム」と呼ばれているモノは、SwiftBondで言うObservableに該当しそう。「時間軸」は.next()
+    - よくある図→ https://gist.githubusercontent.com/staltz/868e7e9bc2a7b8c1f754/raw/b580ad4a33b63acb2ced9b8e5e90faab8ca7ef26/zmulticlickstream.png
   - 言葉の揺らぎ：田村的には、bindTo()やobserve()は「接続する」「配線する」という、ケーブルの配線に例えるのがしっくりきているが、この辺どうなのだろう？
 - これから調べていきたい：
   - Observable->map->bindTo した時と、イベントが発生した時に、どんな処理が行われるのか。
