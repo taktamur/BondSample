@@ -11,6 +11,7 @@ SwiftBond →[https://github.com/SwiftBond/Bond](https://github.com/SwiftBond/Bo
 記録としてのメモ書きです。飽きるまで増えていきます。
 
 - 画面のロジックを、「イベントの変換」として「繋げていく」やり方はとても良いと思う。
+  - ロジックを「箱と線」で表現しやすいので、[図にしやすい](https://github.com/taktamur/BondSample/blob/master/BondSample/2_PostQuestioVC/README.md#接続状態)
 - 簡単にbindTo()で繋げる事ができるため、ここが混線する事がある。
   - とくに１つのObservableに対して複数からbindTo()すると、どのEventで値が変わったのかがわかりにくくなる。
   - NSNotificationCenterを乱用した時と同じような複雑さが発生しうる。
