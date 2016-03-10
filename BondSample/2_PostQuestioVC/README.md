@@ -18,11 +18,11 @@
 ![](https://raw.githubusercontent.com/taktamur/BondSample/master/BondSample/2_PostQuestioVC/2_PostQuestion.gif)
 
 # ファイル
-- ViewController https://github.com/taktamur/BondSample/blob/master/BondSample/2_PostQuestioVC/PostQuestionViewController.swift
-  - Bondでの接続に専念。
-- PostQuestionModel.swift https://github.com/taktamur/BondSample/blob/master/BondSample/2_PostQuestioVC/PostQuestionModel.swift
+- [PostQuestionViewController](https://github.com/taktamur/BondSample/blob/master/BondSample/2_PostQuestioVC/PostQuestionViewController.swift)
+  - Bondでの接続に専念しているViewController
+- [PostQuestionModel.swift](https://github.com/taktamur/BondSample/blob/master/BondSample/2_PostQuestioVC/PostQuestionModel.swift)
   - Modelクラスのつもり。データの保存と通信処理を行う。通信結果もObserver経由で通知している
-- PostQuestionViewModel.swift https://github.com/taktamur/BondSample/blob/master/BondSample/2_PostQuestioVC/PostQuestionViewModel.swift
+- [PostQuestionViewModel.swift](https://github.com/taktamur/BondSample/blob/master/BondSample/2_PostQuestioVC/PostQuestionViewModel.swift)
   - ViewModelのつもりで作っていたが、最終的には「Bondの接続をするだけ」となり、ほとんど仕事をしていないクラス。仕事してなさすぎてViewModelとも言えない。 
   
 
