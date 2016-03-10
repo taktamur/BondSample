@@ -17,3 +17,5 @@
 
 ![](https://raw.githubusercontent.com/taktamur/BondSample/master/BondSample/2_PostQuestioVC/2_PostQuestion.gif)
 
+接続状態
+![](https://raw.githubusercontent.com/taktamur/BondSample/master/BondSample/2_PostQuestioVC/image.jpeg)
